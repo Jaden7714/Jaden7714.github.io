@@ -98,15 +98,15 @@ header{
   transition: all 0.2s ease-in-out; /* smooth hover */
 }
 
-/* Hover effect */
+/* Hover effect for all links */
 .bottom-nav a:hover{
   background:#444;     
   color:#00ccff;       
   transform: scale(1.05); 
 }
 
-/* Active link effect */
-.bottom-nav a.active{
+/* Active link effect for non-trending links */
+.bottom-nav a.active:not(.trending){
   background:#333;     
   color:#00ccff;       
   font-weight:bold;
@@ -160,7 +160,7 @@ footer{
 
 <!-- bottom navigation -->
 <nav class="bottom-nav">
-   <a href="#" class="active">🔥<br>Trending</a>
+  <a href="#" class="trending active">🔥<br>Trending</a>
   <a href="library.html">📚<br>Library</a>
   <a href="updates.html">🔔<br>Updates</a>
   <a href="history.html">🕒<br>History</a>
@@ -186,4 +186,3 @@ navLinks.forEach(link => {
 
 </body>
 </html>
-
